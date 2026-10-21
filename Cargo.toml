@@ -1,0 +1,11 @@
+[package]
+name = "lab4_graficas"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# minifb presenta el framebuffer; no dibuja los triangulos.
+minifb = "0.27"
+# image solo codifica en PNG los pixeles ya rasterizados.
+image = { version = "0.25", default-features = false, features = ["png"] }
+
